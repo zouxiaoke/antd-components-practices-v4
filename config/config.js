@@ -101,6 +101,25 @@ export default defineConfig({
               ],
             },
             {
+              path: '/pro',
+              
+              // redirect: '/pro/form',
+              icon: 'smile',
+              name: 'pro',
+              routes: [
+                {
+                  path: '/',
+                  redirect: '/pro/form'
+                },
+                {
+                  name: 'form',
+                  icon: 'smile',
+                  path: '/pro/form',
+                  component: './pro/proform/SelectForm'
+                }
+              ]
+            },
+            {
               path: '/form',
               icon: 'form',
               name: 'form',
